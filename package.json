@@ -1,0 +1,21 @@
+{
+  "name": "react-flow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "concurrently": "3.5.0",
+    "flow-bin": "^0.75.0",
+    "flow-watch": "^1.1.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "concurrently -r -s first \"react-scripts start\" \"npm run flow:watch\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "flow:watch": "flow-watch"
+  }
+}
